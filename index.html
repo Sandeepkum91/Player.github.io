@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music player</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="script.js">
+    
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="music-player">
+
+            <nav>
+
+                <div class="circle">
+                    <i class="fa-solid fa-angle-left"></i>
+                </div>
+                <div class="circle">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </nav>
+            <img src="logo.jpeg" class="song-img">
+            <h1>Maduram</h1>
+            <p>madhuram song by lusi</p>
+
+            <audio id="song">
+                <source src="song list/WhatsApp Audio 2023-02-06 at 1.53.50 PM.mpeg" type="audio/mpeg">
+            </audio>
+            <input type="range" id="progress" value="0">
+            <div class="controls">
+                <div><i class="fa-solid fa-backward"></i></div>
+                <div onclick="playPause()"><i class="fa-solid fa-play" id="ctrlIcon"></i></div> 
+                <div><i class="fa-solid fa-forward"></i></div> 
+            </div>
+
+  
+        </div>
+
+    </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
